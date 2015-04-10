@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>TextExpander-Snippits</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>;quarter</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2014-12-01T20:54:21Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2014-12-01T21:10:47Z</date>
+			<key>modificationDate</key>
+			<date>2014-12-01T21:10:26Z</date>
+			<key>plainText</key>
+			<string>=IF(MONTH(%filltext:name=field 1%)&gt;2,1,0)+YEAR(%filltext:name=field 1%)&amp;"Q"&amp;LOOKUP(MONTH(%filltext:name=field 1%),{1,2,3,4,5,6,7,8,9,10,11,12},{4,4,1,1,1,2,2,2,3,3,3,4})</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>53FA21FE-D1FF-4471-9F84-47F25FDF4E1D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;agenda </string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2014-01-31T15:08:05Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>agenda</string>
+			<key>lastUsed</key>
+			<date>2014-05-12T17:31:12Z</date>
+			<key>modificationDate</key>
+			<date>2015-04-10T20:26:20Z</date>
+			<key>plainText</key>
+			<string># %snippet:ddate%
+## Attendees
++
+
+## Agenda
++
+
+## Next Steps
++
+
+===========================
+
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>CF148F44-DAA8-4118-B65B-4BB5C727E1F9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ddate</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-01-11T23:30:56Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Today's date</string>
+			<key>lastUsed</key>
+			<date>2015-04-02T21:23:13Z</date>
+			<key>modificationDate</key>
+			<date>2014-01-28T15:29:56Z</date>
+			<key>plainText</key>
+			<string>%B %e, %Y</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>25</integer>
+			<key>uuidString</key>
+			<string>CE101F5A-C5CC-43C0-B75D-81F13AC134B1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;tcase</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-03-19T13:47:55Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>title case conversion</string>
+			<key>lastUsed</key>
+			<date>2015-04-10T20:14:19Z</date>
+			<key>modificationDate</key>
+			<date>2015-04-10T20:15:02Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+echo `pbpaste` | awk '{
+   for ( i=1; i &lt;= NF; i++) {
+      if ( ! match($i,/.[[:upper:]]/ )) {
+         sub(".", substr(toupper($i),1,1) , $i)
+      }
+   }
+   printf
+}'</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>33</integer>
+			<key>uuidString</key>
+			<string>3CF7D734-0B56-40E3-84F0-0FDF2DBE84B5</string>
+		</dict>
+	</array>
+</dict>
+</plist>
