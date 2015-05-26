@@ -33,7 +33,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>53FA21FE-D1FF-4471-9F84-47F25FDF4E1D</string>
+			<string>5D66D84E-E4F0-4D72-9B23-F4937C4045C6</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -69,7 +69,7 @@
 			<key>useCount</key>
 			<integer>2</integer>
 			<key>uuidString</key>
-			<string>CF148F44-DAA8-4118-B65B-4BB5C727E1F9</string>
+			<string>CDA66143-06B3-4A12-9090-17399BE7B950</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -83,7 +83,7 @@
 			<key>label</key>
 			<string>Today's date</string>
 			<key>lastUsed</key>
-			<date>2015-04-02T21:23:13Z</date>
+			<date>2015-05-02T14:58:57Z</date>
 			<key>modificationDate</key>
 			<date>2014-01-28T15:29:56Z</date>
 			<key>plainText</key>
@@ -91,13 +91,13 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>25</integer>
+			<integer>28</integer>
 			<key>uuidString</key>
-			<string>CE101F5A-C5CC-43C0-B75D-81F13AC134B1</string>
+			<string>EC78C2BF-113D-4D44-9EE1-67BE491FB3ED</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>;tcase</string>
+			<string>;tc</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -107,9 +107,9 @@
 			<key>label</key>
 			<string>title case conversion</string>
 			<key>lastUsed</key>
-			<date>2015-04-10T20:14:19Z</date>
+			<date>2015-05-20T01:20:03Z</date>
 			<key>modificationDate</key>
-			<date>2015-04-10T20:15:02Z</date>
+			<date>2015-05-05T18:34:21Z</date>
 			<key>plainText</key>
 			<string>#!/bin/bash
 echo `pbpaste` | awk '{
@@ -123,9 +123,84 @@ echo `pbpaste` | awk '{
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>33</integer>
+			<integer>43</integer>
 			<key>uuidString</key>
-			<string>3CF7D734-0B56-40E3-84F0-0FDF2DBE84B5</string>
+			<string>99FF4D56-ABA5-46E5-9208-2699878996A3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;uc</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-03-19T13:47:55Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>upper case conversion</string>
+			<key>lastUsed</key>
+			<date>2015-05-13T16:41:34Z</date>
+			<key>modificationDate</key>
+			<date>2015-05-05T18:34:42Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+echo -n "`pbpaste`" | tr [[:lower:]] [[:upper:]]</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>70</integer>
+			<key>uuidString</key>
+			<string>682D0488-642F-4732-838C-37DA6F7E962F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;lc</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-03-19T13:47:55Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>lower case conversion</string>
+			<key>lastUsed</key>
+			<date>2015-05-13T16:41:34Z</date>
+			<key>modificationDate</key>
+			<date>2015-05-13T17:27:41Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+echo -n "`pbpaste`" | tr [[:upper:]] [[:lower:]]</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>70</integer>
+			<key>uuidString</key>
+			<string>BA47146C-D11D-4E31-AEC8-1F6F110CF1C9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;math</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-25T16:36:16Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2015-05-25T16:37:39Z</date>
+			<key>modificationDate</key>
+			<date>2015-05-25T16:37:23Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+bc -l &lt;&lt;&lt; "`pbpaste`"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D1C278E5-772B-47DF-92E8-1F8830D5C4E5</string>
 		</dict>
 	</array>
 </dict>
