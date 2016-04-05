@@ -18,19 +18,13 @@
 			<integer>0</integer>
 			<key>creationDate</key>
 			<date>2014-12-01T20:54:21Z</date>
-			<key>flags</key>
-			<integer>0</integer>
 			<key>label</key>
 			<string></string>
-			<key>lastUsed</key>
-			<date>2014-12-01T21:10:47Z</date>
 			<key>modificationDate</key>
 			<date>2014-12-01T21:10:26Z</date>
 			<key>plainText</key>
 			<string>=IF(MONTH(%filltext:name=field 1%)&gt;2,1,0)+YEAR(%filltext:name=field 1%)&amp;"Q"&amp;LOOKUP(MONTH(%filltext:name=field 1%),{1,2,3,4,5,6,7,8,9,10,11,12},{4,4,1,1,1,2,2,2,3,3,3,4})</string>
 			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
 			<string>5D66D84E-E4F0-4D72-9B23-F4937C4045C6</string>
@@ -42,12 +36,8 @@
 			<integer>0</integer>
 			<key>creationDate</key>
 			<date>2014-01-31T15:08:05Z</date>
-			<key>flags</key>
-			<integer>0</integer>
 			<key>label</key>
 			<string>agenda</string>
-			<key>lastUsed</key>
-			<date>2014-05-12T17:31:12Z</date>
 			<key>modificationDate</key>
 			<date>2015-04-10T20:26:20Z</date>
 			<key>plainText</key>
@@ -66,8 +56,6 @@
 </string>
 			<key>snippetType</key>
 			<integer>0</integer>
-			<key>useCount</key>
-			<integer>2</integer>
 			<key>uuidString</key>
 			<string>CDA66143-06B3-4A12-9090-17399BE7B950</string>
 		</dict>
@@ -78,20 +66,14 @@
 			<integer>0</integer>
 			<key>creationDate</key>
 			<date>2012-01-11T23:30:56Z</date>
-			<key>flags</key>
-			<integer>0</integer>
 			<key>label</key>
 			<string>Today's date</string>
-			<key>lastUsed</key>
-			<date>2015-05-02T14:58:57Z</date>
 			<key>modificationDate</key>
 			<date>2014-01-28T15:29:56Z</date>
 			<key>plainText</key>
 			<string>%B %e, %Y</string>
 			<key>snippetType</key>
 			<integer>0</integer>
-			<key>useCount</key>
-			<integer>28</integer>
 			<key>uuidString</key>
 			<string>EC78C2BF-113D-4D44-9EE1-67BE491FB3ED</string>
 		</dict>
@@ -102,17 +84,14 @@
 			<integer>0</integer>
 			<key>creationDate</key>
 			<date>2015-03-19T13:47:55Z</date>
-			<key>flags</key>
-			<integer>2</integer>
 			<key>label</key>
 			<string>title case conversion</string>
-			<key>lastUsed</key>
-			<date>2015-05-20T01:20:03Z</date>
 			<key>modificationDate</key>
-			<date>2015-05-05T18:34:21Z</date>
+			<date>2015-05-30T17:38:26Z</date>
 			<key>plainText</key>
 			<string>#!/bin/bash
-echo `pbpaste` | awk '{
+FOO="`pbpaste`"
+echo ${FOO[@]} | awk '{
    for ( i=1; i &lt;= NF; i++) {
       if ( ! match($i,/.[[:upper:]]/ )) {
          sub(".", substr(toupper($i),1,1) , $i)
@@ -122,8 +101,6 @@ echo `pbpaste` | awk '{
 }'</string>
 			<key>snippetType</key>
 			<integer>3</integer>
-			<key>useCount</key>
-			<integer>43</integer>
 			<key>uuidString</key>
 			<string>99FF4D56-ABA5-46E5-9208-2699878996A3</string>
 		</dict>
@@ -134,12 +111,8 @@ echo `pbpaste` | awk '{
 			<integer>0</integer>
 			<key>creationDate</key>
 			<date>2015-03-19T13:47:55Z</date>
-			<key>flags</key>
-			<integer>2</integer>
 			<key>label</key>
 			<string>upper case conversion</string>
-			<key>lastUsed</key>
-			<date>2015-05-13T16:41:34Z</date>
 			<key>modificationDate</key>
 			<date>2015-05-05T18:34:42Z</date>
 			<key>plainText</key>
@@ -147,8 +120,6 @@ echo `pbpaste` | awk '{
 echo -n "`pbpaste`" | tr [[:lower:]] [[:upper:]]</string>
 			<key>snippetType</key>
 			<integer>3</integer>
-			<key>useCount</key>
-			<integer>70</integer>
 			<key>uuidString</key>
 			<string>682D0488-642F-4732-838C-37DA6F7E962F</string>
 		</dict>
@@ -159,12 +130,8 @@ echo -n "`pbpaste`" | tr [[:lower:]] [[:upper:]]</string>
 			<integer>0</integer>
 			<key>creationDate</key>
 			<date>2015-03-19T13:47:55Z</date>
-			<key>flags</key>
-			<integer>2</integer>
 			<key>label</key>
 			<string>lower case conversion</string>
-			<key>lastUsed</key>
-			<date>2015-05-13T16:41:34Z</date>
 			<key>modificationDate</key>
 			<date>2015-05-13T17:27:41Z</date>
 			<key>plainText</key>
@@ -172,8 +139,6 @@ echo -n "`pbpaste`" | tr [[:lower:]] [[:upper:]]</string>
 echo -n "`pbpaste`" | tr [[:upper:]] [[:lower:]]</string>
 			<key>snippetType</key>
 			<integer>3</integer>
-			<key>useCount</key>
-			<integer>70</integer>
 			<key>uuidString</key>
 			<string>BA47146C-D11D-4E31-AEC8-1F6F110CF1C9</string>
 		</dict>
@@ -184,23 +149,90 @@ echo -n "`pbpaste`" | tr [[:upper:]] [[:lower:]]</string>
 			<integer>0</integer>
 			<key>creationDate</key>
 			<date>2015-05-25T16:36:16Z</date>
-			<key>flags</key>
-			<integer>2</integer>
 			<key>label</key>
-			<string></string>
-			<key>lastUsed</key>
-			<date>2015-05-25T16:37:39Z</date>
+			<string>math via bc</string>
 			<key>modificationDate</key>
-			<date>2015-05-25T16:37:23Z</date>
+			<date>2015-05-30T17:44:00Z</date>
 			<key>plainText</key>
 			<string>#!/bin/bash
 bc -l &lt;&lt;&lt; "`pbpaste`"</string>
 			<key>snippetType</key>
 			<integer>3</integer>
-			<key>useCount</key>
-			<integer>0</integer>
 			<key>uuidString</key>
 			<string>D1C278E5-772B-47DF-92E8-1F8830D5C4E5</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;hex</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-25T16:36:16Z</date>
+			<key>label</key>
+			<string>hex from decimal via bc</string>
+			<key>modificationDate</key>
+			<date>2015-06-08T19:43:35Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+bc -l &lt;&lt;&lt; "ibase=10;obase=16;""`pbpaste`"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>074E3148-1982-467A-A60A-DE0867729DF9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;yellow</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-02-10T17:53:12Z</date>
+			<key>label</key>
+			<string>Tufte Yellow</string>
+			<key>modificationDate</key>
+			<date>2016-02-10T17:53:26Z</date>
+			<key>plainText</key>
+			<string>#FFFFF3</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8B2A850A-3A75-4ECE-861F-D6631736DE34</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;spark</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-04-04T15:58:37Z</date>
+			<key>label</key>
+			<string>unicode sparkline</string>
+			<key>modificationDate</key>
+			<date>2016-04-05T13:24:45Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/perl
+# adapted from https://rosettacode.org/wiki/Sparkline_in_unicode#Perl
+binmode(STDOUT, ":utf8");
+ 
+sub sparkline {
+  my $s = `pbpaste`;
+  #print $s, "\n"; # exit;
+  my @n = split(/[\s,]+/,$s);
+  return unless @n;
+  my($min,$max) = ($n[0],$n[0]);
+  for my $v (@n) { $min = $v if $v &lt; $min; $max = $v if $v &gt; $max; }
+  #printf "min: %5f; max %5f\n", $min, $max;
+  my @bars = map { chr($_) } 0x2581 .. 0x2588;
+  my $div = ($max - $min) / $#bars;
+  print join("", map { $bars[$div ? ($_-$min) / $div : @bars/2] } @n), "\n";
+  1;
+}
+ 
+sparkline(scalar(&lt;&gt;));</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>2A945A8C-5699-4BC7-9FCE-D7131154FA42</string>
 		</dict>
 	</array>
 </dict>
